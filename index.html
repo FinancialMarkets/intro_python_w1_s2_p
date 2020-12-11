@@ -74,12 +74,12 @@
 
 	<section>
 	  <h3>Jupyter Notebooks</h3>
-	  <p align="left">In a Jupyter Notebook you write text and code. Text is written in a syntax known as Markdown.  The code we'll write in Python. Python is not mandatory, however.  You can also write the code in other languages such as R or Julia.</p>
+	  <p align="left">In a Jupyter Notebook you write text and code. Text is written in a syntax known as Markdown.  The code we'll write in Python. Python is not mandatory, however.  You can create a notebook with the ability to write the code in other languages such as R or Julia.</p>
 	</section>
 
 	<section>
 	  <h3>Markdown</h3>
-	  <p align="left"></p>
+	  <p align="left">Markdown is an easy to learn syntax that gets converted to HTML.</p>
 	</section>
 
 	<section>
@@ -89,32 +89,9 @@
 	    <li>Microsoft Azure</li>
 	    <li>Amazon AWS Sagemaker</li>
 	  </ul>
-	  
 	</section>
-
-	<section>
-	  <h3>Functions in Python</h3>
-  <pre><code data-trim data-noescape>
-      def square_it(x):
-          return x * x
-  </code></pre>
-	  <p align="left">and typing into the Python interpreter:</p>
-	  <pre><code data-trim data-noescape>
-      square_it(5)
-	  </code></pre>
-	  <p align="left">returns:</p>
-	  <pre><code data-trim data-noescape>
-	      25
-	  </code></pre>
-	</section>
-
-
-	<section>
-	  <h3>Functions vs Methods</h3>
-	</section>
-
 	
-  
+<!-- INTRO LINUX VM AND BASH  -->
 
 <section>
   <h3>Have You Ever Used Linux?</h3>
@@ -132,6 +109,53 @@
     <li></li>
   </ul>
 </section>
+
+<!-- INTRO FUNCTIONS -->
+
+	<section>
+	  <h3>Functions in Python</h3>
+  <pre><code data-trim data-noescape>
+      def square_it(x):
+          return x * x
+  </code></pre>
+	  <p align="left">and typing into the Python interpreter:</p>
+	  <pre><code data-trim data-noescape>
+      square_it(5)
+	  </code></pre>
+	  <p align="left">returns:</p>
+	  <pre><code data-trim data-noescape>
+	      25
+	  </code></pre>
+	</section>
+
+	<section>
+	  <h3>Bond Cash Flows and Value</h3>
+
+	  <pre><code data-trim data-noescape>
+def create_bond_CFs(coupon, years):
+'''
+Create a list of bond cash flows.
+
+:param float coupon: The bond's coupon rate.
+:param int years: The number of years to maturity.
+'''
+    tmp = [coupon * 1000] * years
+    tmp[years-1] = tmp[years-1] + 1000
+    return tmp
+
+	  </code></pre>
+	  
+	</section>
+
+	<section>
+	  <h3>Functions vs Methods</h3>
+	  <p align="left">In documentation you may see the terms <i>function</i> and <i>method</i>.  We won't make a distinction between the two in this course.  The reasoning is:</p>
+	  <ul>
+	    <li>Methods and functions are similar enough that the distinction is unimportant for now.</li>
+	    <li>Methods have to do with classes, which we won't cover.</li>
+	  </ul>
+	</section>
+
 
 
 </div>
